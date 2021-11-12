@@ -1,0 +1,81 @@
+<div class="editContent">
+    <div class="heading">
+        <h1>EDIT CUSTOMER</h1>
+    </div>
+    <hr><br>
+
+    <!-- [formGroup] ="custForm" (ngSubmit)="onSubmit(custForm.value) -->
+    <!-- [formGroup] ="editForm" (ngSubmit)="editCustomers(editForm.value) -->
+    <div class="form" >
+    
+<form class="row g-3" (ngSubmit)="onUpdateCust()">
+    <div class="col-md-6">
+        <label for="cust_id" class="form-label">CustID </label>
+        <input type="text" class="form-control" name="cust_id" id="cust_id" placeholder="" [(ngModel)]="customer.cust_id">
+      </div>
+    <div class="col-md-12">
+      <label for="inputName" class="form-label">NAME</label>
+      <input type="text" class="form-control" name="name" id="inputName" [(ngModel)]="customer.name">
+    </div>
+    <div class="col-md-6">
+        <label for="inputAge" class="form-label">AGE</label>
+        <input type="text" class="form-control" name="age" id="inputAge" [(ngModel)]="customer.age">
+      </div>
+    <div class="col-md-6">
+        <label for="inputIncome" class="form-label">Income</label>
+        <input type="text" class="form-control"  name="income" id="inputIncome" [(ngModel)]="customer.income">
+      </div>
+    <div class="col-12">
+      <label for="inputEmail4" class="form-label">EMAIL</label>
+      <input type="email" class="form-control" name="email" id="inputEmail4" [(ngModel)]="customer.email">
+    </div>
+    <div class="col-md-6">
+        <label for="inputContact" class="form-label">CONTACT</label>
+        <input type="text" class="form-control" name="contact" id="inputContact" [(ngModel)]="customer.contact">
+    
+      </div>
+    <div class="col-md-6">
+        <label for="inputLoanID" class="form-label">Loan ID</label>
+        <input type="text" class="form-control" name="loan_id" id="inputLoanID" [(ngModel)]="customer.loan_id">
+      </div>
+
+      <div class="col-md-12">
+        <label for="inputLoanType" class="form-label">Loan type</label>
+        <input type="text" class="form-control" name="loan_type" id="inputLoanType" [(ngModel)]="customer.loan_type">
+      </div>
+    <div class="col-md-4">
+        <label for="inputInterest" class="form-label">INTEREST</label>
+        <input type="text" class="form-control" name="interest" id="inputInterest" [(ngModel)]="customer.interest">
+      </div>
+    <div class="col-md-4">
+        <label for="inputInstallments" class="form-label">INSTALLMENTS</label>
+        <input type="text" class="form-control" name="installments" id="inputInstallments" [(ngModel)]="customer.installments">
+      </div>
+    <div class="col-md-4">
+        <label for="inputTimePeriod" class="form-label">Time Period</label>
+        <input type="text" class="form-control" name="time_period" id="inputTimePeriod" [(ngModel)]="customer.time_period">
+      </div>
+    
+     <div class="col-md-6">
+        <label for="inputLoanAmount" class="form-label">LOAN AMOUNT</label>
+        <input type="text" class="form-control" name="loan_amount" id="inputLoanAmount" [(ngModel)]="customer.loan_amount">
+      </div>
+      <div class="col-md-6">
+        <label for="inputLoanStatus" class="form-label">Status</label>
+        <input type="text" class="form-control" name="loan_status" id="inputLoanStatus" [(ngModel)]="customer.loan_status">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPaymentDue" class="form-label">Payment Due</label>
+        <input type="text" class="form-control" name="payment_due" id="inputPaymentDue" [(ngModel)]="customer.payment_due">
+      </div>
+      <div class="col-md-6">
+        <label for="inputYear" class="form-label">YEAR</label>
+        <input type="text" class="form-control" name="year" id="inputYear" [(ngModel)]="customer.year"> 
+      </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary" >UPDATE CUSTOMER</button>
+    </div>
+  </form>
+</div>
+
+</div>

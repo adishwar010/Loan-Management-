@@ -1,0 +1,18 @@
+
+{
+	"cust_id":5,
+	"name":"ZAKIR KHAN",
+	"age":29,
+	"income":2500000,
+	"email":"khan.zakir12@gmail.com",
+	"contact": "9149787050",
+	"loan_id":162,
+	"loan_type":"Home Loan",
+	"interest":10,
+	"installments":12,
+	"time_period":6,
+	"loan_amount":8000000,
+	"loan_status":"Active",
+	"payment_due":6900000,
+	"year":2018
+}

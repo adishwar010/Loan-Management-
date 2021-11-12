@@ -1,0 +1,58 @@
+.cust{
+    position: absolute;
+    top:110px;
+    left:273px;
+    /* z-index: -20; */
+}
+
+#data{
+    background-color: rgba(252, 191, 180, 0.452);
+}
+.card{
+    border-color: white;
+}
+/* #data :hover{
+    border :2px solid ;
+} */
+
+.ud-button{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.custContent{
+    display: flex;
+}
+#add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    position: absolute;
+    left:1045px;
+    padding-right: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+#del {
+    background-color: red;
+    color: white;
+}
+
+
+#del :hover{
+    color: rgb(0, 0, 0);
+}
+
+#editt :hover{
+    color: rgb(255, 231, 231);
+}
+
+#add{
+    color: white;
+}
+
+#add:hover {
+cursor: pointer;
+background-color: rgb(4, 192, 4);
+}

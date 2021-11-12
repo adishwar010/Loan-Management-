@@ -1,0 +1,76 @@
+<div class="addContent">
+    <div class="heading">
+        <h1>ADD CUSTOMER</h1>
+    </div>
+    <hr><br>
+
+    
+<form class="row g-3" [formGroup] ="custForm" (ngSubmit)="onSubmit(custForm.value)">
+    <div class="col-md-6">
+        <label for="inputCustId" class="form-label">CustID</label>
+        <input type="text" class="form-control" formControlName="cust_id" id="inputCustId">
+      </div>
+    <div class="col-md-12">
+      <label for="inputName" class="form-label">NAME</label>
+      <input type="text" class="form-control" formControlName="name" id="inputName">
+    </div>
+    <div class="col-md-6">
+        <label for="inputAge" class="form-label">AGE</label>
+        <input type="text" class="form-control" formControlName="age" id="inputAge">
+      </div>
+    <div class="col-md-6">
+        <label for="inputIncome" class="form-label">Income</label>
+        <input type="text" class="form-control"  formControlName="income" id="inputIncome">
+      </div>
+    <div class="col-12">
+      <label for="inputEmail4" class="form-label">EMAIL</label>
+      <input type="email" class="form-control" formControlName="email" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+        <label for="inputContact" class="form-label">CONTACT</label>
+        <input type="text" class="form-control" formControlName="contact" id="inputContact">
+    
+      </div>
+    <div class="col-md-6">
+        <label for="inputLoanID" class="form-label">Loan ID</label>
+        <input type="text" class="form-control" formControlName="loan_id" id="inputLoanID">
+      </div>
+
+      <div class="col-md-12">
+        <label for="inputLoanType" class="form-label">Loan type</label>
+        <input type="text" class="form-control" formControlName="loan_type" id="inputLoanType">
+      </div>
+    <div class="col-md-4">
+        <label for="inputInterest" class="form-label">INTEREST</label>
+        <input type="text" class="form-control" formControlName="interest" id="inputInterest">
+      </div>
+    <div class="col-md-4">
+        <label for="inputInstallments" class="form-label">INSTALLMENTS</label>
+        <input type="text" class="form-control" formControlName="installments" id="inputInstallments">
+      </div>
+    <div class="col-md-4">
+        <label for="inputTimePeriod" class="form-label">Time Period</label>
+        <input type="text" class="form-control" formControlName="time_period" id="inputTimePeriod">
+      </div>
+    
+     <div class="col-md-6">
+        <label for="inputLoanAmount" class="form-label">LOAN AMOUNT</label>
+        <input type="text" class="form-control" formControlName="loan_amount" id="inputLoanAmount">
+      </div>
+      <div class="col-md-6">
+        <label for="inputLoanStatus" class="form-label">Status</label>
+        <input type="text" class="form-control" formControlName="loan_status" id="inputLoanStatus">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPaymentDue" class="form-label">Payment Due</label>
+        <input type="text" class="form-control" formControlName="payment_due" id="inputPaymentDue">
+      </div>
+      <div class="col-md-6">
+        <label for="inputYear" class="form-label">YEAR</label>
+        <input type="text" class="form-control" formControlName="year" id="inputYear"> 
+      </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary" >ADD CUSTOMER</button>
+    </div>
+  </form>
+</div>

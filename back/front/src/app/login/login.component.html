@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+    </head>
+    <body>
+    <div class="login-box">
+        <h2><i class="fa fa-key" style="font-size:48px;color:rgb(43, 147, 155)"></i></h2>
+        
+        <h2>ADMIN</h2>
+        <form>
+          <div class="user-box">
+ 
+
+            <input type="email"  classs="form-control"  [(ngModel)] ="username" name="username"  required="">
+            <label >username</label>
+          
+          </div>
+          <div class="user-box">
+            <input type="password"  classs="form-control"   [(ngModel)]="password" name="password" required="">
+            <label >password</label>
+            
+          </div>
+          <a>
+            
+            <button type="submit" class="btn btn-default" ng-click="login()" value="GO">Login</button>
+          </a>
+        </form>
+      </div>
+
+    </body>
+    </html>

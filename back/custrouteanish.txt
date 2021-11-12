@@ -1,0 +1,34 @@
+// router.post("/customer", (req, res) => {
+    // let emp = new Customer({
+    // cust_id: req.body.cust_id,
+    // name: req.body.name,
+    // age: req.body.age,
+    // income: req.body.income,
+    // email: req.body.email,
+    // loan_id: req.body.loan_id,
+    // loan_type: req.body.loan_type,
+    // interest: req.body.interest,
+    // installments: req.body.installments,
+    // time_period: req.body.time_period,
+    // loan_amount: req.body.loan_amount,
+    // loan_status: req.body.loan_status,
+    // payment_due: req.body.payment_due,
+    // year: req.body.year,
+    // });
+
+//     let emp = new Customer({
+
+//         cust_id: req.body.cust_id ,
+//         cust_name :req.body.cust_name,
+//         cust_contact : req.body.cust_contact,
+//         cust_email:req.body.cust_email
+//     })
+  
+//     emp.save((err, doc) => {
+//       if (err) {
+//         console.log("Error in Post data" + err);
+//       } else {
+//         res.send(doc);
+//       }
+//     });
+//   });
