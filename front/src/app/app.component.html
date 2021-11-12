@@ -1,5 +1,4 @@
-
-<input type="checkbox" id="check">
+<input type="checkbox" id="check" />
 <!--header area start-->
 <header class="header">
   <label for="check">
@@ -7,31 +6,35 @@
   </label>
   <div class="left_area">
     <h3>Loan <span>Manager</span></h3>
-
   </div>
   <div class="right_area">
     <a routerLink="login" class="logout_btn"> Login </a>
-
   </div>
-  </header>
+</header>
 
-  <div class="sidebar">
-    
-    
-    <ul class="dot">
-      <li><img src="./assets/img/admin.png" class="profile_image" alt=""  ></li>
-      <li><h4>Admin</h4></li>
-    </ul>
-    
-  <a class="main-item" ><i class="fas fa-desktop"></i><span>Dashboard</span></a>
-  <a class="main-item" routerLink ="customer" ><i class="fas fa-users"></i><span>Customer</span></a>
-  <a class="main-item" ><i class="fas fa-money-bill"></i><span>Loans</span></a>
-  <a class="main-item" ><i class="fas fa-wallet"></i><span>Payments</span></a>
-  <a class="main-item" ><i class="fas fa-money-check-alt"></i><span>Invoices</span></a>
-  <a class="main-item" ><i class="fas fa-book-open"></i><span>Loan Plans</span></a>
-  <a class="main-item" ><i class="fas fa-list-alt"></i><span>Reports</span></a>
-  
-    
-  </div>
+<div class="sidebar">
+  <ul class="dot">
+    <li><img src="./assets/img/admin.png" class="profile_image" alt="" /></li>
+    <li><h4>Admin</h4></li>
+  </ul>
+
+  <a class="main-item"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+  <a class="main-item" routerLink="customer"
+    ><i class="fas fa-users"></i><span>Customer</span></a
+  >
+  <a class="main-item" routerLink="loan"
+    ><i class="fas fa-money-bill"></i><span>Loans</span></a
+  >
+  <a class="main-item" routerLink="payment"
+    ><i class="fas fa-wallet"></i><span>Payments</span></a
+  >
+  <a class="main-item"
+    ><i class="fas fa-money-check-alt"></i><span>Invoices</span></a
+  >
+  <a class="main-item"
+    ><i class="fas fa-book-open"></i><span>Loan Plans</span></a
+  >
+  <a class="main-item"><i class="fas fa-list-alt"></i><span>Reports</span></a>
+</div>
 
 <router-outlet></router-outlet>

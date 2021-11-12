@@ -1,0 +1,17 @@
+<div class="cust">
+  <h1>LOANS</h1>
+  <hr />
+
+  <div class="row">
+    <div class="col md-4" *ngFor="let row of loandata">
+      <div class="card mb-3">
+        <div class="card" id="data" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Loan id {{ row.loan_id }}</h5>
+            <p class="card-text">Loan Type {{ row.loan_type }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

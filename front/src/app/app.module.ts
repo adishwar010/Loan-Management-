@@ -21,6 +21,8 @@ import { AddCustomerComponent } from './add-customer/add-customer.component';
   import {MatPaginatorModule} from '@angular/material/paginator';
   import {MatInputModule} from '@angular/material/input';
 import { EditcustomerComponent } from './editcustomer/editcustomer.component';
+import { LoansComponent } from './loans/loans.component';
+import { PaymentComponent } from './payment/payment.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,9 @@ import { EditcustomerComponent } from './editcustomer/editcustomer.component';
     LoginComponent,
     CustomerComponent,
     AddCustomerComponent,
-    EditcustomerComponent
+    EditcustomerComponent,
+    LoansComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,

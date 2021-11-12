@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { CustomerComponent } from './customer/customer.component';
 import { AddCustomerComponent } from './add-customer/add-customer.component';
 import { EditcustomerComponent } from './editcustomer/editcustomer.component';
+import { LoansComponent } from './loans/loans.component';
+import { PaymentComponent } from './payment/payment.component';
 
 const routes: Routes = [
   {
@@ -23,15 +25,21 @@ const routes: Routes = [
     component: CustomerComponent,
   },
   {
-    path:'addcustomer',
-    component: AddCustomerComponent
+    path: 'loan',
+    component: LoansComponent,
   },
   {
-    path:'editcustomer',
-    component: EditcustomerComponent
-  }
-  
-  
+    path: 'payment',
+    component: PaymentComponent,
+  },
+  {
+    path: 'addcustomer',
+    component: AddCustomerComponent,
+  },
+  {
+    path: 'editcustomer',
+    component: EditcustomerComponent,
+  },
 ];
 
 @NgModule({
