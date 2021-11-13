@@ -1,15 +1,19 @@
-<div class="cust">
+<div id="hello">
   <h1>PAYMENTS</h1>
   <hr />
+</div>
 
+<div class="cust">
   <div class="row">
     <div class="col md-4" *ngFor="let row of paymentdata">
       <div class="card mb-3">
         <div class="card" id="data" style="width: 18rem">
           <div class="card-body">
-            <h5 class="card-title">Cust Name: {{ row.name }}</h5>
-            <p class="card-text">Loan Amount: {{ row.loan_amount }}</p>
-            <p class="card-text">Payment Due: {{ row.payment_due }}</p>
+            <h5 class="card-title" id="">
+              <b> {{ row.name }}</b>
+            </h5>
+            <p class="card-text"><b>Loan Amount: </b>{{ row.loan_amount }}</p>
+            <p class="card-text"><b>Payment Due: </b>{{ row.payment_due }}</p>
           </div>
         </div>
       </div>
