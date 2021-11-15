@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { LoginService } from '../appServices/login.service';
 
 @Component({
   selector: 'app-login',
@@ -7,11 +8,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private loginservice: LoginService) {}
   username = '';
   password = '';
   login() {
-  
+    // this.loginservice.login();
     if (this.username == 'Anish' && this.password == '123') {
       this.router.navigateByUrl('/sidebar');
       alert('Succesfull');
@@ -19,7 +20,6 @@ export class LoginComponent implements OnInit {
       alert('Login unsuccessful');
     }
   }
-  
 
   ngOnInit(): void {}
 }

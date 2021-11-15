@@ -12,8 +12,8 @@ import { PaymentComponent } from './payment/payment.component';
 
 const routes: Routes = [
   {
-    path: ' ',
-    redirectTo: 'login',
+    path: '',
+    redirectTo: '/login',
     pathMatch: 'full',
   },
   {
