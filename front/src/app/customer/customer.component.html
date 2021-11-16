@@ -14,7 +14,11 @@
         <div class="card" id="data" style="width: 18rem">
           <div class="card-body">
             <h5 class="card-title">ID: {{ row.cust_id }}</h5>
-            <p class="card-text">NAME: {{ row.name }}</p>
+            <p class="card-text">Name: {{ row.name }}</p>
+            <p class="card-text">Loan no: {{ row.loan_id }}</p>
+            <p class="card-text">Contact no: {{ row.contact }}</p>
+            <p class="card-text2">Email: {{ row.email }}</p>
+
             <div class="ud-button">
               <a
                 (click)="onEdit(row)"

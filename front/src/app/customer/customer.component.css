@@ -75,4 +75,9 @@
 .card-text {
   font-family: "Nunito", sans-serif;
   font-size: larger;
+  text-transform: capitalize;
+}
+.card-text2 {
+  font-family: "Nunito", sans-serif;
+  font-size: larger;
 }
