@@ -1,0 +1,7 @@
+.editContent {
+  position: absolute;
+  top: 105px;
+  left: 450px;
+  max-width: 500px;
+  /* z-index: -20; */
+}

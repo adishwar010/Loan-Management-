@@ -13,16 +13,9 @@
               <b> {{ row.name }}</b>
             </h5>
             <p class="card-text"><b>Loan Amount: </b>{{ row.loan_amount }}</p>
+            <p class="card-text">Loan no: {{ row.loan_id }}</p>
             <p class="card-text"><b>Payment Due: </b>{{ row.payment_due }}</p>
-            <div class="ud-button">
-              <a class="btn btn-primary btn-success" id="editt"
-                ><mat-icon>create</mat-icon></a
-              >
-              <br /><br />
-              <a class="btn btn-primary btn-danger" id="del"
-                ><mat-icon>delete_forever</mat-icon></a
-              >
-            </div>
+            <mat-icon>visibility</mat-icon>
           </div>
         </div>
       </div>

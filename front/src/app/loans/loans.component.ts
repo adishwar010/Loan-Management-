@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CustomerService } from '../appServices/customer.service';
 import { LoanService } from '../appServices/loan.service';
 
 @Component({
@@ -10,7 +11,11 @@ import { LoanService } from '../appServices/loan.service';
 export class LoansComponent implements OnInit {
   loandata!: any;
 
-  constructor(private router: Router, private loanService: LoanService) {}
+  constructor(
+    private router: Router,
+    private loanService: LoanService,
+    private custService: CustomerService
+  ) {}
   getLoans() {
     this.loanService.getCustomerList().subscribe(
       (res) => {
@@ -25,5 +30,9 @@ export class LoansComponent implements OnInit {
 
   ngOnInit(): void {
     this.getLoans();
+  }
+  onInfo(customer: any) {
+    this.custService.setter(customer);
+    this.router.navigateByUrl(`/info`);
   }
 }

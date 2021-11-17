@@ -23,6 +23,7 @@ import { AddCustomerComponent } from './add-customer/add-customer.component';
 import { EditcustomerComponent } from './editcustomer/editcustomer.component';
 import { LoansComponent } from './loans/loans.component';
 import { PaymentComponent } from './payment/payment.component';
+import { InfoComponent } from './info/info.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import { PaymentComponent } from './payment/payment.component';
     AddCustomerComponent,
     EditcustomerComponent,
     LoansComponent,
-    PaymentComponent
+    PaymentComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
