@@ -20,6 +20,7 @@
 .card {
   border-color: white;
   border-radius: 15px;
+  width: 24rem;
 }
 #data :hover {
   background-color: #9370db;

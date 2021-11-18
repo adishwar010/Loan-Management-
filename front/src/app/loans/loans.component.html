@@ -15,7 +15,7 @@
       <div class="row">
         <div class="col md-4" *ngFor="let row of loandata">
           <div class="card mb-3">
-            <div class="card" id="data" style="width: 18rem">
+            <div class="card" id="data" >
               <div class="card-body">
                 <h5 class="card-title">Loan_id: {{ row.loan_id }}</h5>
                 <p class="card-text">Loan Amount: {{ row.loan_amount }}</p>
@@ -23,7 +23,7 @@
                 <p class="card-text">Interest: {{ row.interest }} %</p>
                 <p class="card-text">Installments: {{ row.installments }}</p>
                 <p class="card-text">Year: {{ row.year }}</p>
-                <a (click)="onInfo(row)"><mat-icon>visibility</mat-icon></a>
+                <a (click)="onInfo(row)" class="eye"><mat-icon>visibility</mat-icon></a>
               </div>
             </div>
           </div>

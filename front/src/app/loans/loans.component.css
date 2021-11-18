@@ -9,10 +9,19 @@
 
 .cust {
   position: absolute;
-  top: 250px;
-  left: 273px;
+  top: 243px;
+  left: 326px;
   /* z-index: -20; */
 }
+
+.eye {
+  position: absolute;
+  top: 247px;
+  left: 313px;
+  font-size: xx-large;
+  /* z-index: -20; */
+}
+
 
 #data {
   background-color: #483d8b;
@@ -21,6 +30,7 @@
 .card {
   border-color: white;
   border-radius: 15px;
+  width: 23rem;
 }
 #data :hover {
   background-color: #9370db;
