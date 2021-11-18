@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -31,4 +31,57 @@
       </div>
     </div>
   </body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1">
+    <!-- <title>CSS Card Flip</title> -->
+    <!-- <link href="style.css" type="text/css" rel="stylesheet"> -->
+    </head>
+
+    <body>
+      <div class="custContent">
+        <h1>LOANS</h1>
+      </div>
+
+      <hr />
+        <div class="maincontainer " *ngFor="let row of loandata">
+            
+            <div class="front">
+              <div class="image">
+                <h5 class="card-title">Loan id: {{ row.loan_id }}</h5>
+              <p class="card-text">Customer Name: {{ row.name }}</p>
+
+              <p class="card-text">Contact no: {{ row.contact }}</p>
+              <p class="card-text2">Email: {{ row.email }}</p>
+              
+              </div>
+
+            </div>
+            
+
+
+              <div class="back">
+                <h5 class="card-title">Customer ID: {{ row.cust_id }}</h5>
+                <br>
+              <p class="card-text">Loan No: {{ row.loan_id }}</p>
+              <p class="card-text">Loan Type: {{ row.loan_type }}</p>
+              <p class="card-text">Loan Status: {{ row.loan_status }}</p>
+              <p class="card-text">Loan Amount: {{ row.loan_amount }}</p>
+              <a (click)="onInfo(row)" class="eye"><mat-icon>visibility</mat-icon></a>
+
+              
+              </div>
+  
+              
+            
+        </div>
+              
+
+    </body>
 </html>

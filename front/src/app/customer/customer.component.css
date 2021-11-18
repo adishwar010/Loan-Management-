@@ -88,18 +88,32 @@ body{
   display: flex;
   justify-content: space-between;
 }
-#add {
-  background :linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,114,155,1) 78%);
-  color: white;
-  display: flex;
-  padding-top: 13px;
-}
 
-#add:hover {
-  cursor: pointer;
-  background: linear-gradient(90deg, rgba(38,95,21,1) 0%, rgba(57,249,3,1) 78%);
-  color: #000;
-}
+
+
+#add {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+#add {
+  /* color: white; */
+    display: flex;
+   /* margin: 5px; */
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   /* display: block; */
+ }
+
+ #add:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
 
  .maincontainer
 {

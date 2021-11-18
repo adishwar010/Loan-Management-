@@ -1,79 +1,55 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap");
-#hello {
+body{
   position: absolute;
   top: 100px;
   left: 273px;
-  /* z-index: -20; */
-}
-
-.cust {
-  position: absolute;
-  top: 250px;
-  left: 273px;
-  /* z-index: -20; */
-}
-
-#data {
-  background-color: #483d8b;
-  color: white;
-}
-.card {
-  border-color: white;
-  border-radius: 15px;
-  width: 24rem;
-}
-#data :hover {
-  background-color: #9370db;
-  border-radius: 15px;
-  transition: 0.5s all ease-in-out;
-  margin-top: -10px;
-}
-
-.ud-button {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
 }
 .custContent {
+  margin: 10px;
   display: flex;
+  justify-content: space-between;
 }
-#add {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  position: absolute;
-  left: 1045px;
-  padding-right: 10px;
-  cursor: pointer;
+
+
+ .maincontainer
+{
+    width: 390px;
+    height: 299px;
+    margin: 10px;
+    float: left; /* stack each div horizontally */
+    padding: 10px;
+    
+}
+
+.front{
+  padding: 15px;
+}
+
+.image>h5{
   text-align: center;
+  font-size: 1.8rem;
 }
-#del {
-  background-color: red;
-  color: white;
-}
-
-#del :hover {
-  color: rgb(0, 0, 0);
+.image>p{
+  position: relative;
+  top: 50px;
+  font-size: 1.2rem;
 }
 
-#editt :hover {
-  color: rgb(255, 231, 231);
+
+/* style the maincontainer class with all child div's of class .front */
+.maincontainer > .front
+{
+  background-color: #D9AFD9;
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
+    color: rgb(48, 47, 47);
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    
+    width: 373px;
+    height: 290px;
+    border-radius: 10px;
 }
 
-#add {
-  color: white;
-}
 
-#add:hover {
-  cursor: pointer;
-  background-color: rgb(4, 192, 4);
-}
-.card-title {
-  text-align: center;
-  text-transform: capitalize;
-  font-family: "Nunito", sans-serif;
-}
-.card-text {
-  font-family: "Nunito", sans-serif;
-}
+
+
