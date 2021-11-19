@@ -33,55 +33,44 @@
   </body>
 </html> -->
 
-
-
-
 <!DOCTYPE html>
 <html>
-    <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1">
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale = 1"
+    />
     <!-- <title>CSS Card Flip</title> -->
     <!-- <link href="style.css" type="text/css" rel="stylesheet"> -->
-    </head>
+  </head>
 
-    <body>
-      <div class="custContent">
-        <h1>LOANS</h1>
+  <body>
+    <div class="custContent">
+      <h1>LOANS</h1>
+    </div>
+
+    <hr />
+    <div class="maincontainer" *ngFor="let row of loandata">
+      <div class="front">
+        <div class="image">
+          <h5 class="card-title"><b>Loan id: </b>{{ row.loan_id }}</h5>
+          <p class="card-text"><b>Customer Name: </b>{{ row.name }}</p>
+
+          <p class="card-text"><b>Contact no: </b>{{ row.contact }}</p>
+          <p class="card-text2"><b>Email: </b>{{ row.email }}</p>
+        </div>
       </div>
 
-      <hr />
-        <div class="maincontainer " *ngFor="let row of loandata">
-            
-            <div class="front">
-              <div class="image">
-                <h5 class="card-title">Loan id: {{ row.loan_id }}</h5>
-              <p class="card-text">Customer Name: {{ row.name }}</p>
-
-              <p class="card-text">Contact no: {{ row.contact }}</p>
-              <p class="card-text2">Email: {{ row.email }}</p>
-              
-              </div>
-
-            </div>
-            
-
-
-              <div class="back">
-                <h5 class="card-title">Customer ID: {{ row.cust_id }}</h5>
-                <br>
-              <p class="card-text">Loan No: {{ row.loan_id }}</p>
-              <p class="card-text">Loan Type: {{ row.loan_type }}</p>
-              <p class="card-text">Loan Status: {{ row.loan_status }}</p>
-              <p class="card-text">Loan Amount: {{ row.loan_amount }}</p>
-              <a (click)="onInfo(row)" class="eye"><mat-icon>visibility</mat-icon></a>
-
-              
-              </div>
-  
-              
-            
-        </div>
-              
-
-    </body>
+      <div class="back">
+        <h5 class="card-title"><b>Customer ID: </b>{{ row.cust_id }}</h5>
+        <br />
+        <p class="card-text"><b>Loan No: </b>{{ row.loan_id }}</p>
+        <p class="card-text"><b>Loan Type: </b>{{ row.loan_type }}</p>
+        <p class="card-text"><b>Loan Status: </b>{{ row.loan_status }}</p>
+        <p class="card-text"><b>Loan Amount: </b>{{ row.loan_amount }}</p>
+        <a (click)="onInfo(row)" class="eye"><mat-icon>visibility</mat-icon></a>
+      </div>
+    </div>
+  </body>
 </html>

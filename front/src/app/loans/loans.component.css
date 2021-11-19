@@ -85,9 +85,7 @@
   text-transform: capitalize;
 } */
 
-
-
-body{
+body {
   position: absolute;
   top: 100px;
   left: 273px;
@@ -98,7 +96,11 @@ body{
   justify-content: space-between;
 }
 #add {
-  background :linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,114,155,1) 78%);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(25, 114, 155, 1) 78%
+  );
   color: white;
   display: flex;
   padding-top: 13px;
@@ -106,38 +108,39 @@ body{
 
 #add:hover {
   cursor: pointer;
-  background: linear-gradient(90deg, rgba(38,95,21,1) 0%, rgba(57,249,3,1) 78%);
+  background: linear-gradient(
+    90deg,
+    rgba(38, 95, 21, 1) 0%,
+    rgba(57, 249, 3, 1) 78%
+  );
   color: #000;
 }
 
- .maincontainer
-{
-    width: 390px;
-    height: 299px;
-    margin: 10px;
-    float: left; /* stack each div horizontally */
-    padding: 10px;
-    
+.maincontainer {
+  width: 390px;
+  height: 299px;
+  margin: 10px;
+  float: left; /* stack each div horizontally */
+  padding: 10px;
 }
 
-.front{
+.front {
   padding: 15px;
 }
 
-.image>h5{
+.image > h5 {
   text-align: center;
   font-size: 1.8rem;
 }
-.image>p{
+.image > p {
   position: relative;
   top: 50px;
   font-size: 1.2rem;
 }
 
-.back h5
-{
-    text-align: center;
-    font-size: xx-large;
+.back h5 {
+  text-align: center;
+  font-size: xx-large;
 }
 
 .ud-button {
@@ -145,19 +148,17 @@ body{
   justify-content: space-evenly;
   align-items: center;
 }
-.back p
-{
-    font-size: large;
+.back p {
+  font-size: large;
 }
 
-.front h2
-{
-    position: absolute;
-    padding: 10px;
-    top: 200px;
-    color: #000;
+.front h2 {
+  position: absolute;
+  padding: 10px;
+  top: 200px;
+  color: #000;
 }
-.eye{
+.eye {
   position: relative;
   left: 300px;
   top: -30px;
@@ -165,44 +166,44 @@ body{
 }
 
 /* style the maincontainer class with all child div's of class .front */
-.maincontainer > .front
-{
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    color: #000;
-    position: absolute;
-    transform: perspective(600px) rotateY(0deg);
-    
-    width: 373px;
-    height: 290px;
-    border-radius: 10px;
-    
-    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
-    transition: transform .5s linear 0s;
+.maincontainer > .front {
+  /* background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(25, 114, 155, 1) 78%
+  );
+  color: white;
+  position: absolute;
+  transform: perspective(600px) rotateY(0deg);
+
+  width: 373px;
+  height: 290px;
+  border-radius: 10px;
+
+  backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+  transition: transform 0.5s linear 0s;
 }
 
 /* style the maincontainer class with all child div's of class .back */
-.maincontainer > .back
-{
-    position: absolute;
-    transform: perspective(600px) rotateY(180deg);
-    background: #262626;
-    color: #fff;
-    width: 373px;
-    height: 290px;
-    border-radius: 10px;
-    padding: 5px;
-    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
-    transition: transform .5s linear 0s;
+.maincontainer > .back {
+  position: absolute;
+  transform: perspective(600px) rotateY(180deg);
+  background: #262626;
+  color: white;
+  width: 373px;
+  height: 290px;
+  border-radius: 10px;
+  padding: 5px;
+  backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+  transition: transform 0.5s linear 0s;
 }
 
-.maincontainer:hover > .front
-{
-    transform: perspective(600px) rotateY(-180deg);
+.maincontainer:hover > .front {
+  transform: perspective(600px) rotateY(-180deg);
 }
 
-.maincontainer:hover > .back
-{
-    transform: perspective(600px) rotateY(0deg);
+.maincontainer:hover > .back {
+  transform: perspective(600px) rotateY(0deg);
 }
-
