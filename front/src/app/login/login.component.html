@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <!-- dsad -->
-  
+
   <head>
     <link
       rel="stylesheet"
@@ -23,7 +23,7 @@
           <input
             type="email"
             classs="form-control"
-            [(ngModel)]="username"
+            [(ngModel)]="cred.username"
             name="username"
             required=""
           />
@@ -33,7 +33,7 @@
           <input
             type="password"
             classs="form-control"
-            [(ngModel)]="password"
+            [(ngModel)]="cred.password"
             name="password"
             required=""
           />
@@ -43,7 +43,7 @@
           <button
             type="submit"
             class="btn btn-default"
-            ng-click="login()"
+            (click)="login(cred)"
             value="GO"
           >
             Login
