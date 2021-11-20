@@ -9,47 +9,59 @@
     />
   </head>
   <body>
-    <div class="login-box">
-      <h2>
-        <i
-          class="fa fa-key"
-          style="font-size: 48px; color: rgb(43, 147, 155)"
-        ></i>
-      </h2>
-
-      <h2>ADMIN</h2>
-      <form>
-        <div class="user-box">
-          <input
-            type="email"
-            classs="form-control"
-            [(ngModel)]="username"
-            name="username"
-            required=""
-          />
-          <label>username</label>
-        </div>
-        <div class="user-box">
-          <input
-            type="password"
-            classs="form-control"
-            [(ngModel)]="password"
-            name="password"
-            required=""
-          />
-          <label>password</label>
-        </div>
-        <a>
-          <button
-            type="submit"
-            class="btn btn-default"
-            (click)="login()"
-            value="GO"
-          >
-            Login
-          </button>
-        </a>
-      </form>
+    <div class="container">
+      <div class="text">
+        <div class="wrapper">
+          <div class="typing-demo">
+            LOAN MANAGER
+          </div>
+      </div>
+      
     </div>
+      <div class="login-box">
+        <h2>
+          <i
+            class="fa fa-key"
+            style="font-size: 48px; color: rgb(43, 147, 155)"
+          ></i>
+        </h2>
+  
+        <h2>ADMIN</h2>
+        <form>
+          <div class="user-box">
+            <input
+              type="email"
+              classs="form-control"
+              [(ngModel)]="username"
+              name="username"
+              required=""
+            />
+            <label>username</label>
+          </div>
+          <div class="user-box">
+            <input
+              type="password"
+              classs="form-control"
+              [(ngModel)]="password"
+              name="password"
+              required=""
+            />
+            <label>password</label>
+          </div>
+          <a>
+            <button
+              type="submit"
+              class="btn btn-default"
+              (click)="login()"
+              value="GO"
+            >
+              Login
+            </button>
+          </a>
+        </form>
+      </div>
+
+    </div>
+    
   </body>
 </html>

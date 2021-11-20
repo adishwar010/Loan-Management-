@@ -21,6 +21,10 @@ export class DashboardComponent implements OnInit {
     this.router.navigateByUrl(`payment`);
   }
 
+  onDashboard() {
+    this.router.navigateByUrl(`dash`);
+  }
+
   onLogout() {
     this.router.navigateByUrl(`login`);
   }

@@ -13,6 +13,32 @@ header {
   z-index: 60;
 }
 
+
+#logout {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+#logout {
+  position: absolute;
+  top: 8px;
+  left: 1425px;
+  display: flex;
+   margin: 10px;
+   padding: 10px 25px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   /* box-shadow: 0 0 20px #eee; */
+   border-radius: 10px;
+   /* display: block; */
+ }
+
+ #logout:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
 .left_area h3 {
   position: absolute;
   top: 30px;

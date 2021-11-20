@@ -17,7 +17,7 @@
         <h3>Loan <span>Manager</span></h3>
       </div>
       <div class="right_area">
-        <a (click)="onLogout()" class="logout_btn"> Logout </a>
+        <a (click)="onLogout()" class="logout_btn" id="logout"><mat-icon>exit_to_app</mat-icon></a>
       </div>
     </header>
 
@@ -29,7 +29,7 @@
         <li><h4>Admin</h4></li>
       </ul>
 
-      <a class="main-item"
+      <a class="main-item" (click)="onDashboard()"
         ><i class="fas fa-desktop"></i><span>Dashboard</span></a
       >
       <a class="main-item" (click)="onCustomer()"

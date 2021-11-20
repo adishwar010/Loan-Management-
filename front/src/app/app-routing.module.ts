@@ -11,6 +11,7 @@ import { LoansComponent } from './loans/loans.component';
 import { PaymentComponent } from './payment/payment.component';
 import { InfoComponent } from './info/info.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashComponent } from './dash/dash.component';
 
 const routes: Routes = [
   {
@@ -49,6 +50,10 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
+  },
+  {
+    path: 'dash',
+    component: DashComponent,
   },
 ];
 

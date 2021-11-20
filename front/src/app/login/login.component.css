@@ -5,8 +5,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: linear-gradient(#141e30, #243b55);
+  background : url("../../../img/background.jpg") no-repeat ;
+  background-size: cover;
+
+  /* background-color: violet; */
+  
 }
+
 
 .logout_btn {
   padding: 5px;
@@ -27,13 +32,13 @@ body {
 .login-box {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 73%;
   width: 400px;
   padding: 40px;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.747);
   box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.781);
   border-radius: 10px;
 }
 
@@ -96,4 +101,40 @@ body {
   background: #b8dbdd;
   color: #fff;
   border-radius: 5px;
+}
+
+/* .text{
+  position: absolute;
+  left: 10%;
+} */
+
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+}
+
+.typing-demo {
+  width: 12.5ch;
+  animation: typing 3s , blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 5em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
