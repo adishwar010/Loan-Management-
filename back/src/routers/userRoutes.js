@@ -14,34 +14,34 @@ userRouter.get("/users", async (req, res) => {
   }
 });
 
-// userRouter.post("/signin", async (req, res) => {
-//   try {
-//     const getlogin = await user.findOne({ email: req.body.email });
-//     if (getlogin.password == req.body.password) {
-//     }
-//     console.log(getlogin);
-//     res.send(getlogin);
-//   } catch (err) {
-//     res.send(err);
-//   }
-// });
-
-userRouter.post("/login", (req, res) => {
-  let userData = req.body;
-
-  user.findOne({ email: userData.email }, (error, user) => {
-    if (error) {
-      console.log(error);
-    } else {
-      if (!user) {
-        res.status(401).send("Invalid email");
-      } else if (user.password !== userData.password) {
-        res.status(401).send("Invalid password");
-      } else {
-        res.status(200).send(user);
-      }
-    }
-  });
+userRouter.post("/users", async (req, res) => {
+  try {
+    const addingUser = new user(req.body);
+    console.log("req.body =", req.body);
+    //    res.send(req.body);
+    const insertUsers = await addingUser.save();
+    res.send(insertUsers);
+  } catch (err) {
+    res.send(err);
+  }
 });
+
+// userRouter.post("/login", (req, res) => {
+//   let userData = req.body;
+
+//   user.findOne({ email: userData.email }, (error, user) => {
+//     if (error) {
+//       console.log(error);
+//     } else {
+//       if (!user) {
+//         res.status(401).send("Invalid email");
+//       } else if (user.password !== userData.password) {
+//         res.status(401).send("Invalid password");
+//       } else {
+//         res.status(200).send(user);
+//       }
+//     }
+//   });
+// });
 
 module.exports = userRouter;

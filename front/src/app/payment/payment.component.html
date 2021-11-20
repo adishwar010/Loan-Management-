@@ -22,37 +22,36 @@
   </div>
 </div> -->
 
-
-
-
+<app-dashboard></app-dashboard>
 <!DOCTYPE html>
 <html>
-    <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1">
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale = 1"
+    />
     <!-- <title>CSS Card Flip</title> -->
     <!-- <link href="style.css" type="text/css" rel="stylesheet"> -->
-    </head>
+  </head>
 
-    <body>
-      <div class="custContent">
-        <h1>PAYMENTS</h1>
-      </div>
-      <hr />
-        <div class="maincontainer " *ngFor="let row of paymentdata">
-            
-            <div class="front">
-              <div class="image">
-                <h5 class="card-title"><b> {{ row.name }}</b></h5>
-                
-              <p class="card-text"><b>Loan Amount: </b>{{ row.loan_amount }}</p>
-              <p class="card-text"><b>Loan no: </b>{{ row.loan_id }}</p>
-              <p class="card-text"><b>Payment Due: </b>{{ row.payment_due }}</p>
-              
-              </div>
+  <body>
+    <div class="custContent">
+      <h1>PAYMENTS</h1>
+    </div>
+    <hr />
+    <div class="maincontainer" *ngFor="let row of paymentdata">
+      <div class="front">
+        <div class="image">
+          <h5 class="card-title">
+            <b> {{ row.name }}</b>
+          </h5>
 
-            </div>       
+          <p class="card-text"><b>Loan Amount: </b>{{ row.loan_amount }}</p>
+          <p class="card-text"><b>Loan no: </b>{{ row.loan_id }}</p>
+          <p class="card-text"><b>Payment Due: </b>{{ row.payment_due }}</p>
         </div>
-              
-
-    </body>
+      </div>
+    </div>
+  </body>
 </html>

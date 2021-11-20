@@ -3,14 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 // import { SidebarComponent } from './sidebar/sidebar.component';
 // import { AppComponent } from './app.component';
 
-import { LoginComponent } from './login/login.component';
-import { CustomerComponent } from './customer/customer.component';
-import { AddCustomerComponent } from './add-customer/add-customer.component';
-import { EditcustomerComponent } from './editcustomer/editcustomer.component';
-import { LoansComponent } from './loans/loans.component';
-import { PaymentComponent } from './payment/payment.component';
-import { InfoComponent } from './info/info.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from '../login/login.component';
+import { CustomerComponent } from '../customer/customer.component';
+import { AddCustomerComponent } from '../add-customer/add-customer.component';
+import { EditcustomerComponent } from '../editcustomer/editcustomer.component';
+import { LoansComponent } from '../loans/loans.component';
+import { PaymentComponent } from '../payment/payment.component';
+import { InfoComponent } from '../info/info.component';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -56,4 +56,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class DashboardRoutingModule {}

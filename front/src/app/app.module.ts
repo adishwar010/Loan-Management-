@@ -24,6 +24,7 @@ import { EditcustomerComponent } from './editcustomer/editcustomer.component';
 import { LoansComponent } from './loans/loans.component';
 import { PaymentComponent } from './payment/payment.component';
 import { InfoComponent } from './info/info.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import { InfoComponent } from './info/info.component';
     EditcustomerComponent,
     LoansComponent,
     PaymentComponent,
-    InfoComponent
+    InfoComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

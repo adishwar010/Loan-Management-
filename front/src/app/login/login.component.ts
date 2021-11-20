@@ -13,7 +13,8 @@ export class LoginComponent implements OnInit {
   // username = '';
   // password = '';
   logindata: any;
-  cred!: any;
+  username!: String;
+  password!: String;
   public user!: user;
 
   // login() {
@@ -26,11 +27,24 @@ export class LoginComponent implements OnInit {
   //   }
   // }
 
-  login(cred: any) {
+  login() {
     this.loginservice.getLogin().subscribe(
       (res) => {
         this.logindata = res;
-        console.log(this.logindata);
+
+        this.logindata.forEach((value: any) => {
+          if (
+            value.username == this.username &&
+            value.password == this.password
+          ) {
+            alert('Correct');
+            this.router.navigateByUrl(`/dashboard`);
+          } else {
+            alert('Incorrect');
+          }
+          // console.log(value.username);
+        });
+
         // this.router.navigateByUrl(`/customer`);
       },
       (err) => {
@@ -38,7 +52,8 @@ export class LoginComponent implements OnInit {
       }
     );
   }
+
   ngOnInit(): void {
-    this.cred = this.loginservice.getter();
+    this.logindata = this.loginservice.getter();
   }
 }
