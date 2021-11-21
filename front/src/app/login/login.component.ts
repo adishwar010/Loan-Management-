@@ -32,20 +32,20 @@ export class LoginComponent implements OnInit {
       (res) => {
         this.logindata = res;
 
-        this.logindata.forEach((value: any) => {
+        let count = 0;
+        let obj = this.logindata.find((value: any) => {
           if (
             value.username == this.username &&
             value.password == this.password
           ) {
-            alert('Correct');
-            this.router.navigateByUrl(`/dashboard`);
-          } else {
-            alert('Incorrect');
+            count++;
           }
-          // console.log(value.username);
         });
-
-        // this.router.navigateByUrl(`/customer`);
+        if (count == 1) {
+          this.router.navigateByUrl(`/dash`);
+        } else {
+          alert('Invalid credentials');
+        }
       },
       (err) => {
         console.log('error is', err);

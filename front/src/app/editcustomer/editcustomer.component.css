@@ -1,7 +1,23 @@
-.editContent{
-    position: absolute;
-    top: 105px;
-    left: 450px;
-    max-width:500px;
-    /* z-index: -20; */
+.editContent {
+  position: absolute;
+  top: 105px;
+  border-radius: 10px;
+  padding: 30px;
+  color: white;
+  left: 400px;
+  max-width: 1000px;
+  /* z-index: -20; */
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(25, 114, 155, 1) 78%
+  );
+}
+
+mat-icon {
+  font-size: 2rem;
+}
+
+h1 {
+  text-transform: capitalize;
 }

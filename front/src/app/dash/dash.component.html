@@ -16,42 +16,81 @@
       <h1>DASHBOARD</h1>
     </div>
     <hr />
-   
-    <div class="maincontainer" >
-        <div class="front">
-          <div class="image">
-            <h5 class="card-title">
-              <b>LOANS SANCTIONED</b>
-            </h5>
-            <mat-icon > local_library</mat-icon>
-            <p class="card-text"><b>7 </b></p>
+
+    <div class="abcdefgh">
+      <div class="efgh">
+        <div class="maincontainer">
+          <div class="front">
+            <div class="image">
+              <h5 class="card-title">
+                <b>LOANS SANCTIONED</b>
+              </h5>
+              <mat-icon> local_library</mat-icon>
+              <p class="card-text">
+                <b>{{ count_loans }}</b>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="maincontainer">
+          <div class="front">
+            <div class="image">
+              <h5 class="card-title">
+                <b> TOTAL CUSTOMERS</b>
+              </h5>
+              <mat-icon>group</mat-icon>
+              <p class="card-text">
+                <b>{{ count_cust }} </b>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="maincontainer">
+          <div class="front">
+            <div class="image">
+              <h5 class="card-title">
+                <b>AMOUNT SANCTIONED</b>
+              </h5>
+              <mat-icon> local_atm</mat-icon>
+              <p class="card-text" id="amount">
+                <b> {{ count_amount }}</b>
+              </p>
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="maincontainer" >
-        <div class="front">
-          <div class="image">
-            <h5 class="card-title">
-              <b> TOTAL CUSTOMERS</b>
-            </h5>
-            <mat-icon>group</mat-icon>
-            <p class="card-text"><b>15 </b></p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="maincontainer" >
+    <div class="abcd">
+      <div class="maincontainer">
         <div class="front">
           <div class="image">
             <h5 class="card-title">
               <b> ACTIVE LOANS</b>
             </h5>
-            <mat-icon > local_library</mat-icon>
-            <p class="card-text"><b>7 </b></p>
+            <mat-icon> local_library</mat-icon>
+            <p class="card-text">
+              <b>{{ count_active }}</b>
+            </p>
           </div>
         </div>
       </div>
+
+      <div class="maincontainer">
+        <div class="front">
+          <div class="image">
+            <h5 class="card-title">
+              <b>AMOUNT DUE</b>
+            </h5>
+            <mat-icon> local_atm</mat-icon>
+            <p class="card-text" id="amount">
+              <b> {{ count_due }}</b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

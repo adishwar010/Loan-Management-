@@ -1,63 +1,79 @@
 body {
-    position: absolute;
-    top: 100px;
-    left: 273px;
-  }
-  .custContent {
-    margin: 10px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .maincontainer {
-    width: 390px;
-    height: 299px;
-    margin: 10px;
-    float: left; /* stack each div horizontally */
-    padding: 10px;
-  }
-  
-  .front {
-    padding: 15px;
-  }
-  
-  .image > h5 {
-    text-align: center;
-    font-size: 1.8rem;
-  }
-  .image > p {
-    position: relative;
-    top: 50px;
-    left: 160px;
-    font-size: 2rem;
-  }
-  
-  /* style the maincontainer class with all child div's of class .front */
-  .maincontainer > .front {
-    /* background-color: #D9AFD9;
-  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
-    background: linear-gradient(
-      90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(25, 114, 155, 1) 78%
-    );
-  
-    color: white;
-    position: absolute;
-    transform: perspective(600px) rotateY(0deg);
-  
-    width: 373px;
-    height: 290px;
-    border-radius: 10px;
-  }
-  
-  .card-title {
-    text-transform: capitalize;
-  }
+  position: absolute;
+  top: 100px;
+  left: 273px;
+}
+.custContent {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
 
-  mat-icon{
-      position: relative;
-      left: 113px;
-      top: 22px;
-      font-size: 6.6rem;
-  }
+.maincontainer {
+  width: 390px;
+  height: 299px;
+  margin: 10px;
+  float: left; /* stack each div horizontally */
+  padding: 10px;
+}
+
+.front {
+  padding: 15px;
+}
+
+.image > h5 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.image > p {
+  position: relative;
+  top: 50px;
+  left: 160px;
+  font-size: 2rem;
+}
+
+/* style the maincontainer class with all child div's of class .front */
+.maincontainer > .front {
+  /* background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(25, 114, 155, 1) 78%
+  );
+
+  color: white;
+  position: absolute;
+
+  width: 373px;
+  height: 290px;
+  border-radius: 10px;
+}
+
+.card-title {
+  text-transform: capitalize;
+}
+
+mat-icon {
+  position: relative;
+  left: 113px;
+  top: 22px;
+  font-size: 6.6rem;
+}
+
+#amount {
+  position: relative;
+  top: 30px;
+  left: 110px;
+}
+
+.abcdefgh {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.abcd {
+  position: relative;
+  left: 200px;
+}
