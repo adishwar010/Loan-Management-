@@ -1,4 +1,3 @@
-
 body {
   position: absolute;
   top: 85px;
@@ -96,7 +95,7 @@ body {
   height: 290px;
   border-radius: 10px;
 
-  backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+  backface-visibility: hidden; /*cant see the backside elements as theyre turning around*/
   transition: transform 0.5s linear 0s;
 }
 
