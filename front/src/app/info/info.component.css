@@ -1,7 +1,17 @@
 .editContent {
   position: absolute;
   top: 105px;
-  left: 450px;
-  max-width: 500px;
-  /* z-index: -20; */
+  left: 380px;
+  max-width: 1000px;
+  padding: 30px;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(25, 114, 155, 1) 78%
+  );
+}
+
+.heading{
+  color: white;
 }

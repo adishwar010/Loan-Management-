@@ -26,7 +26,7 @@ export class DashboardComponent implements OnInit {
   }
 
   onLogout() {
-    if (confirm('Are you sure?')) {
+    if (confirm('Do you want to LogOut ?')) {
       this.router.navigateByUrl(`login`);
     }
   }
