@@ -47,7 +47,7 @@ export class AddCustomerComponent implements OnInit {
   }
 
   isValid(): boolean {
-    console.log('hi');
+   
     if (
       this.custForm.value.cust_id == '' ||
       this.custForm.value.name == '' ||
@@ -78,6 +78,7 @@ export class AddCustomerComponent implements OnInit {
     else {
       this.custService.addCustomer(this.custForm.value).subscribe(
         (res) => {
+        
           console.log(res);
           this.router.navigateByUrl(`/customer`);
         },
