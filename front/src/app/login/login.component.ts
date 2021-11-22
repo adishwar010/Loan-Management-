@@ -38,6 +38,8 @@ export class LoginComponent implements OnInit {
             value.username == this.username &&
             value.password == this.password
           ) {
+            let adminname = value.name;
+            localStorage.setItem("name",adminname);
             count++;
           }
         });
