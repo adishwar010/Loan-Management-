@@ -19,23 +19,25 @@
     <hr />
     <div class="maincontainer" *ngFor="let row of loandata">
       <div class="front">
-        <div class="image">
-          <h5 class="card-title"><b>Loan id: </b>{{ row.loan_id }}</h5>
-          <p class="card-text"><b>Customer Name: </b>{{ row.name }}</p>
-
-          <p class="card-text"><b>Contact no: </b>{{ row.contact }}</p>
-          <p class="card-text2"><b>Email: </b>{{ row.email }}</p>
-        </div>
-      </div>
-
-      <div class="back">
         <h5 class="card-title"><b>Customer ID: </b>{{ row.cust_id }}</h5>
         <br />
         <p class="card-text"><b>Loan No: </b>{{ row.loan_id }}</p>
         <p class="card-text"><b>Loan Type: </b>{{ row.loan_type }}</p>
         <p class="card-text"><b>Loan Status: </b>{{ row.loan_status }}</p>
         <p class="card-text"><b>Loan Amount: </b>{{ row.loan_amount }}</p>
-        <a (click)="onInfo(row)" class="eye"><mat-icon>visibility</mat-icon></a>
+      </div>
+
+      <div class="back">
+        <div class="image">
+          <h5 class="card-title"><b>Loan id: </b>{{ row.loan_id }}</h5>
+          <p class="card-text"><b>Customer Name: </b>{{ row.name }}</p>
+
+          <p class="card-text"><b>Contact no: </b>{{ row.contact }}</p>
+          <p class="card-text2"><b>Email: </b>{{ row.email }}</p>
+          <a (click)="onInfo(row)" class="eye"
+            ><mat-icon>visibility</mat-icon></a
+          >
+        </div>
       </div>
     </div>
   </body>

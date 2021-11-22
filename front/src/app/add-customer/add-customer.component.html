@@ -85,7 +85,7 @@
       />
     </div>
     <div class="col-md-4">
-      <label for="inputInterest" class="form-label">INTEREST</label>
+      <label for="inputInterest" class="form-label">INTEREST (%)</label>
       <input
         type="text"
         class="form-control"
@@ -103,7 +103,9 @@
       />
     </div>
     <div class="col-md-4">
-      <label for="inputTimePeriod" class="form-label">Time Period</label>
+      <label for="inputTimePeriod" class="form-label"
+        >Time Period (in years)</label
+      >
       <input
         type="text"
         class="form-control"
@@ -149,7 +151,9 @@
       />
     </div>
     <div class="col-12">
-      <button type="submit" class="btn btn-primary">ADD CUSTOMER</button>
+      <button type="submit" (click)="isValid()" class="btn btn-primary">
+        ADD CUSTOMER
+      </button>
     </div>
   </form>
 </div>

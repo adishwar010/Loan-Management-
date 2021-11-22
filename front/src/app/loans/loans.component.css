@@ -74,8 +74,12 @@ body {
 .eye {
   position: relative;
   left: 300px;
-  top: -30px;
-  font-size: 3rem;
+  top: 1px;
+  font-size: 5rem;
+}
+
+.eye:hover {
+  cursor: pointer;
 }
 
 /* style the maincontainer class with all child div's of class .front */

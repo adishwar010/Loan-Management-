@@ -46,15 +46,45 @@ export class AddCustomerComponent implements OnInit {
     });
   }
 
+  isValid(): boolean {
+    console.log('hi');
+    if (
+      this.custForm.value.cust_id == '' ||
+      this.custForm.value.name == '' ||
+      this.custForm.value.age == '' ||
+      this.custForm.value.income == '' ||
+      this.custForm.value.email == '' ||
+      this.custForm.value.contact == '' ||
+      this.custForm.value.loan_id == '' ||
+      this.custForm.value.loan_type == '' ||
+      this.custForm.value.interest == '' ||
+      this.custForm.value.installments == '' ||
+      this.custForm.value.time_period == '' ||
+      this.custForm.value.loan_amount == '' ||
+      this.custForm.value.loan_status == '' ||
+      this.custForm.value.payment_due == '' ||
+      this.custForm.value.year == ''
+    ) {
+      return true;
+    }
+    return false;
+  }
+
   onSubmit(form: NgForm) {
-    this.custService.addCustomer(this.custForm.value).subscribe(
-      (res) => {
-        console.log(res);
-        this.router.navigateByUrl(`/customer`);
-      },
-      (err) => {
-        console.log(err);
-      }
-    );
+    if (this.isValid()) {
+      alert('Some fields are missing');
+    }
+    // console.log(this.custForm.value.cust_id);
+    else {
+      this.custService.addCustomer(this.custForm.value).subscribe(
+        (res) => {
+          console.log(res);
+          this.router.navigateByUrl(`/customer`);
+        },
+        (err) => {
+          console.log(err);
+        }
+      );
+    }
   }
 }
