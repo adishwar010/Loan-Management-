@@ -36,43 +36,6 @@ router.put("/customer/:id" , async(req,res)=>{
     }
 })
 
-// router.put("/customer/:id", (req, res) => {
-//     if (Object_id.isValid(req.params.id)) {
-//       let cust = {
-//         cust_id : req.body.cust_id,
-//         name : req.body.name,
-//         age : req.body.age,
-//         income : req.body.income,
-//         email : req.body.email,
-//         contact : req.body.contact,
-//         loan_id : req.body.loan_id,
-//         loan_type : req.loan_type,
-//         interest : req.body.interest,
-//         installments : req.body.installments,
-//         time_period : req.body.time_period,
-//         loan_status : req.body.loan_status,
-//         payment_due : req.body.payment_due,
-//         year : req.body.year,
-//       };
-  
-//       Customer.findByIdAndUpdate(
-//         req.params.id,
-//         { $set: cust },
-//         { new: true },
-//         (err, doc) => {
-//           if (err) {
-//             console.log("Error in customer by id" + err);
-//           } else {
-//             res.send(doc);
-//           }
-//         }
-//       );
-//     } else {
-       
-//     return res.status(400).send("No record found within id" + req.params.id);
-//       }
-//     });
-
 
 //get all
 router.get("/customer" , async (req,res)=>{

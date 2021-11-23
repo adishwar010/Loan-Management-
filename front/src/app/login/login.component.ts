@@ -10,22 +10,12 @@ import { user } from '../appModels/user.model';
 })
 export class LoginComponent implements OnInit {
   constructor(private router: Router, private loginservice: LoginService) {}
-  // username = '';
-  // password = '';
+ 
   logindata: any;
   username!: String;
   password!: String;
   public user!: user;
 
-  // login() {
-  //   this.loginservice.login();
-  //   if (this.username == 'Anish' && this.password == '123') {
-  //     this.router.navigateByUrl('/sidebar');
-  //     alert('Succesfull');
-  //   } else {
-  //     alert('Login unsuccessful');
-  //   }
-  // }
 
   login() {
     this.loginservice.getLogin().subscribe(

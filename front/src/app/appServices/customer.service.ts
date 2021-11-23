@@ -27,9 +27,11 @@ export class CustomerService {
   updateUrl = 'http://localhost:6500/customer';
   constructor(private http: HttpClient) {}
 
+  //sending post request
   addCustomer(emp: Customer) {
     return this.http.post(this.url, emp);
   }
+  //retrieving customer data
   getCustomerList() {
     return this.http.get(this.getUrl);
   }
@@ -37,7 +39,7 @@ export class CustomerService {
   // getCustomer(){
   //   return this.http.get(this.getUrl )
   // }
-
+//retreiving a single customer
   getCustomer(id: any): Observable<any> {
     let url = `${this.getUrl}/read/${id}`;
     return this.http.get<Response>(url, { headers: this.headers }).pipe(
@@ -47,15 +49,15 @@ export class CustomerService {
       catchError(this.errorMgmt)
     );
   }
-
+//delete customer
   deleteCustomer(id: any) {
     return this.http.delete(`${this.deleteUrl}/${id}`);
   }
-
+//update customer
   updateCustomer(emp: Customer) {
     return this.http.put(`${this.updateUrl}/${emp._id}`, emp);
   }
-
+//error generation
   errorMgmt(error: HttpErrorResponse) {
     let errorMessage = '';
     if (error.error instanceof ErrorEvent) {

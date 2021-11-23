@@ -39,6 +39,11 @@ body {
 
 .front {
   padding: 15px;
+  font-size: 1.2rem;
+}
+.front > h5 {
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 .image > h5 {
